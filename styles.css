@@ -1,0 +1,145 @@
+:root{
+    --nav-colour: #b22222;
+    --text-colour: black;
+    --card-colour: rgb(88, 84, 78);
+}
+
+nav {
+    background-color: var(--nav-colour); 
+    padding: 10px 20px;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+
+}
+
+.registration a {
+    text-decoration: none;
+    color: var(--text-colour);
+    font-weight: bold;
+   
+}
+
+.home-nav a {
+    text-decoration: none;
+    color: var(--text-colour);
+}
+
+.pokedex-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--card-colour);
+    border-style: double;
+    padding: 20px 5px;
+    margin-top: 40px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--card-colour);
+    padding: 10px 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.register-form a {
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../Pokemon-art.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+footer {
+    background-color: var(--nav-colour);
+    color: white;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.register-form input{
+    padding: 10px;
+    border: 5px;
+    border-radius: 10px;
+    font-size: small;
+
+}
+
+form{
+    width: 400px;
+}
+
+h2{
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../Pokemon-art.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    flex: 1;
+}
+
+
+
+
+
