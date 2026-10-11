@@ -1,0 +1,19 @@
+
+services:
+ db:
+  image: mariadb:11.4
+  container_name: login-db
+  restart: unless-stopped
+  environment:
+   MARIADB_ROOT_PASSWORD: Kade11
+   MARIADB_DATABASE: signupdb
+   MARIADB_USER: Ramone
+   MARIADB_PASSWORD: IloveCaptains
+  ports:
+   - "3306:3306"
+  volumes:
+   - db_data:/var/lib/mysql
+   - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+ db_data:
